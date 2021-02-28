@@ -1,4 +1,5 @@
 import Table from 'react-bootstrap/Table';
+const axios = require('axios').default;
 
 export default function OneInTheBattleTable() {
     return (
