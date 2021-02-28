@@ -2,66 +2,66 @@ import { BedwarsAchievementsDTO, BedwarsPropertiesDTO, BedwarsStatsDTO, OneInThe
 
 const axios = require('axios').default;
 
-export const getBedwarsAcheivements = (): Promise<BedwarsAchievementsDTO[]> => {
+export const getBedwarsAcheivements = async (): Promise<BedwarsAchievementsDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/bedwarsachievements/all');
 }
 
-export const getBedwarsProperties = (): Promise<BedwarsPropertiesDTO[]> => {
+export const getBedwarsProperties = async (): Promise<BedwarsPropertiesDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/bedwarsproperties/all');
 }
 
-export const getBedwarsStats = (): Promise<BedwarsStatsDTO[]> => {
+export const getBedwarsStats = async (): Promise<BedwarsStatsDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/bedwarsstats/all');
 }
 
-export const getBedwarsStatsByKey = (key: string): Promise<BedwarsStatsDTO[]> => {
+export const getBedwarsStatsByKey = async (key: string): Promise<BedwarsStatsDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/bedwarsstats/key/' + key);
 }
 
-export const getOneInTheBattle = (): Promise<OneInTheBattleDTO[]> => {
+export const getOneInTheBattle = async (): Promise<OneInTheBattleDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/oneinthebattle/all');
 }
 
-export const getPartiesParties = (): Promise<PartiesPartiesDTO[]> => {
+export const getPartiesParties = async (): Promise<PartiesPartiesDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/partiesparties/all');
 }
 
-export const getPartiesPartiesByExp = (): Promise<PartiesPartiesDTO[]> => {
+export const getPartiesPartiesByExp = async (): Promise<PartiesPartiesDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/partiesparties/all/exp');
 }
 
-export const getPartiesPartiesByKills = (): Promise<PartiesPartiesDTO[]> => {
+export const getPartiesPartiesByKills = async (): Promise<PartiesPartiesDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/partiesparties/all/kills');
 }
 
-export const getPartyGames = (): Promise<PartyGamesDTO[]> => {
+export const getPartyGames = async (): Promise<PartyGamesDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/partygames/all');
 }
 
-export const getSurvivalGames = (): Promise<SurvivalGamesDTO[]> => {
+export const getSurvivalGames = async (): Promise<SurvivalGamesDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/survivalgames/all');
 }
 
-export const getSurvivalGamesByCoins = (): Promise<SurvivalGamesDTO[]> => {
+export const getSurvivalGamesByCoins = async (): Promise<SurvivalGamesDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/survivalgames/coins');
 }
 
-export const getSurvivalGamesByDeaths = (): Promise<SurvivalGamesDTO[]> => {
+export const getSurvivalGamesByDeaths = async (): Promise<SurvivalGamesDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/survivalgames/deaths');
 }
 
-export const getSurvivalGamesByGamesPlayed = (): Promise<SurvivalGamesDTO[]> => {
+export const getSurvivalGamesByGamesPlayed = async (): Promise<SurvivalGamesDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/survivalgames/gamesplayed');
 }
 
-export const getSurvivalGamesByKills = (): Promise<SurvivalGamesDTO[]> => {
+export const getSurvivalGamesByKills = async (): Promise<SurvivalGamesDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/survivalgames/kills');
 }
 
-export const getSurvivalGamesWins = (): Promise<SurvivalGamesDTO[]> => {
+export const getSurvivalGamesWins = async (): Promise<SurvivalGamesDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/survivalgames/wins');
 }
 
-export const getTowerDefense = (): Promise<TowerDefenseDTO[]> => {
+export const getTowerDefense = async (): Promise<TowerDefenseDTO[]> => {
     return axios.get('http://mcbcc.minecraftr.us/api/scores/towerdefense/all');
 }
