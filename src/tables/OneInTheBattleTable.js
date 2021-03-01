@@ -6,7 +6,7 @@ export async function getOneInTheBattleScores() {
     //   headers: {'Access-Control-Allow-Origin': '*'},
     //   responseType: 'json'
     // });
-    let response = await axios.get('localhost:8079/api/scores/oneinthebattle/all');
+    let response = await axios.get('38.107.226.192:8079/api/scores/oneinthebattle/all');
     console.log(response);
     return response;
 }
